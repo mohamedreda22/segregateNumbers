@@ -17,3 +17,4 @@ const numbers = [9, -3, 5, -2, -8, -6, 1, 3];
 const segregatedResult = segregateNumbers(numbers);
 
 console.log("Segregated Result: " + JSON.stringify(segregatedResult));
+//   FCAIH

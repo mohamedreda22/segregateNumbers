@@ -42,4 +42,5 @@ Therefore, the overall time complexity of the `segregateNumbers` function is O(n
 -->Please note that other operations in the code,
    such as array concatenation or push operations,
    do not significantly affect the overall time complexity in this context.
-   */
+      FCAIH
+      */

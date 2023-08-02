@@ -15,4 +15,5 @@ function segregateNumbers(numbers):
 numbers = [9, -3, 5, -2, -8, -6, 1, 3]
 segregatedResult = segregateNumbers(numbers)
 print "Segregated Result:", segregatedResult
-*/
+   FCAIH 
+   */
