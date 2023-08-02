@@ -1,73 +1,50 @@
-Certainly! Here's an example of a basic `README.md` file for your code:
 
-```markdown
-# Code Repository ReadMe
+# Segregate Numbers Algorithm
+![image](https://github.com/mohamedreda22/segregateNumbers/assets/73208810/efaefed2-4385-42de-86c5-720dd8b0fd62)
 
-This repository contains code that demonstrates various algorithms and operations in JavaScript.
 
-## Table of Contents
+This repository contains a JavaScript algorithm that segregates an array of positive and negative numbers while maintaining their relative order.
 
-- [Description](#description)
-- [Algorithms](#algorithms)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+## Algorithm Description
 
-## Description
+The `segregateNumbers` function takes an array of positive and negative integers as input and performs the following steps:
 
-This repository showcases different algorithms and operations implemented in JavaScript. It includes examples of array manipulation, sorting, and other programming concepts.
-
-## Algorithms
-
-### 1. Segregate Positive and Negative Numbers
-
-The `segregateNumbers` function takes an array of positive and negative integers and segregates them without changing the relative order of elements. This ensures that positive numbers follow negative numbers while maintaining the same relative ordering.
-
-### 2. Sort Numbers
-
-The `sortNumbers` function sorts an array of numbers in ascending order using the built-in `sort` function.
-
-### 3. Calculate Sum of Numbers
-
-The `calculateSum` function calculates the sum of all numbers in an array.
+1. Initializes two arrays: `result` and `positiveNumbers`.
+2. Iterates through each element in the input `numbers` array.
+   - If the current number is positive (greater than 0), it is added to the `positiveNumbers` array.
+   - If the current number is non-positive (less than or equal to 0), it is added to the `result` array.
+3. Returns a new array by concatenating the `result` array (containing non-positive numbers) with the `positiveNumbers` array (containing positive numbers).
 
 ## Usage
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/mohamedreda22/segregateNumbers.git
    ```
 
 2. Navigate to the repository's directory:
 
    ```bash
-   cd your-repo-name
+   cd segregateNumbers
    ```
 
 3. Run the JavaScript file:
 
    ```bash
-   node your-script.js
+   node segregateNumbers.js
    ```
 
-4. Explore the different algorithms and their outputs.
+4. The console will display the segregated result of the input array.
 
-## Contributing
+## Example
 
-Contributions are welcome! If you have improvements or new algorithms to add, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-new-algorithm`
-3. Make your changes and commit them: `git commit -am 'Add new algorithm'`
-4. Push to the branch: `git push origin feature-new-algorithm`
-5. Submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Given the input array:
+```javascript
+const numbers = [9, -3, 5, -2, -8, -6, 1, 3];
 ```
 
-Replace placeholders like `your-username`, `your-repo-name`, and `your-script.js` with your actual GitHub username, repository name, and the name of the JavaScript file containing your code.
-
-This is a basic template, and you can customize it further based on the specifics of your code repository. You might want to include sections on installation, dependencies, and additional usage instructions if necessary.
+The algorithm will produce the segregated result:
+```javascript
+Segregated Result: [-3, -2, -8, -6, 9, 5, 1, 3]
+```
