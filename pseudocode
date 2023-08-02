@@ -1,0 +1,18 @@
+/*
+function segregateNumbers(numbers):
+    result = []
+    positiveNumbers = []
+
+    for i = 0 to length of numbers - 1:
+        if numbers[i] > 0:
+            append numbers[i] to positiveNumbers
+        else:
+            append numbers[i] to result
+    
+    return concatenate result and positiveNumbers
+
+
+numbers = [9, -3, 5, -2, -8, -6, 1, 3]
+segregatedResult = segregateNumbers(numbers)
+print "Segregated Result:", segregatedResult
+*/

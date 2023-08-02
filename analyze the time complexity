@@ -1,0 +1,45 @@
+/*
+Let's analyze the time complexity of the `segregateNumbers`function 
+
+--->javascript code:
+
+function segregateNumbers(numbers) {
+    let result = [];
+    let positiveNumbers = [];
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > 0) {
+            positiveNumbers.push(numbers[i]);
+        } else {
+            result.push(numbers[i]);
+        }
+    }
+
+    return result.concat(positiveNumbers);
+}
+
+
+The key operation in this function is the loop that iterates through the `numbers` array.
+Let's break down the time complexity step by step:
+
+1. The loop iterates through each element in the `numbers` array exactly once.
+   Therefore, the time complexity of the loop is O(n), where n is the number of elements in the array.
+
+2. Inside the loop, the `push` operation is performed for both `positiveNumbers` and `result` arrays.
+   Each `push` operation takes constant time O(1).
+
+3. The `concat` operation combines the two arrays (`result` and `positiveNumbers`)
+   into a new array. The time complexity of this operation depends on the length of the arrays being concatenated.
+   In the worst case, the time complexity of `concat` is O(m),
+   where m is the total number of elements in both arrays.
+
+Overall, the dominant factor in terms of time complexity is the loop
+  that iterates through the `numbers` array, which is O(n).
+
+Therefore, the overall time complexity of the `segregateNumbers` function is O(n),
+ where n is the number of elements in the input array.
+
+-->Please note that other operations in the code,
+   such as array concatenation or push operations,
+   do not significantly affect the overall time complexity in this context.
+   */
